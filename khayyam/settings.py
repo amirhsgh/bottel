@@ -26,7 +26,8 @@ SECRET_KEY = '+4!!oa_^kgp0nem&&@4t7u3m&pqbew^91t!v_-i07&ggu3^0s)'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+import django_heroku
+django_heroku.settings(locals())
 
 # Application definition
 
