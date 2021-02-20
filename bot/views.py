@@ -59,11 +59,6 @@ def Check_num(message):
         bt = data['text']
         bot.send_message(message.from_user.id,bt)
 
-@server.route("/")
-def webhook():
-    bot.remove_webhook()
-    bot.set_webhook(url='https://khayyam2601.herokuapp.com/' + TOKEN)
-    return "!",200
 
 
 #
