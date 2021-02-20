@@ -25,7 +25,7 @@ SECRET_KEY = '+4!!oa_^kgp0nem&&@4t7u3m&pqbew^91t!v_-i07&ggu3^0s)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://khayyam2601.herokuapp.com"]
+ALLOWED_HOSTS = []
 
 import django_heroku
 

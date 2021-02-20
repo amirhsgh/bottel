@@ -3,7 +3,8 @@ import requests
 import json
 import re
 from telebot.types import ReplyKeyboardMarkup,KeyboardButton
-bot = telebot.TeleBot('1656459425:AAEymoNrG9_OP5yJh1vkXRJur4gkJoWh9-I')
+TOKEN = '1656459425:AAEymoNrG9_OP5yJh1vkXRJur4gkJoWh9-I'
+bot = telebot.TeleBot(TOKEN)
 
 def Button(message):
     r = requests.get('https://khayyam2601.herokuapp.com/api/button')
@@ -28,4 +29,12 @@ def Check_num(message):
         bt = data['text']
         bot.send_message(message.from_user.id,bt)
 
-bot.polling()
+@server.route("/")
+def webhook():
+    bot.remove_webhook()
+    bot.set_webhook(url='https://khayyam2601.herokuapp.com/' + TOKEN)
+    return "!",200
+
+
+#
+# bot.polling()
