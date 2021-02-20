@@ -59,7 +59,10 @@ def Check_num(message):
         bt = data['text']
         bot.send_message(message.from_user.id,bt)
 
+import time
+while True:
+    try:
+        bot.polling(none_stop=True)
 
-
-#
-# bot.polling()
+    except Exception as e:
+        time.sleep(15)
