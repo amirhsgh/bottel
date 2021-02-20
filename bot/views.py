@@ -37,7 +37,7 @@ class NumberBut(APIView):
 
 
 def Button(message):
-    r = requests.get('https://khayyam2601.herokuapp.com/api/button')
+    r = requests.get('https://khayyam2601.herokuapp.com/api/button/')
     data = json.loads(r.text)
     key = ReplyKeyboardMarkup(True,False)
     text = "سلام {} شماره دانشجویی تو وارد کن :)".format(message.from_user.first_name)
@@ -49,7 +49,7 @@ def start(message):
 
 @bot.message_handler(regexp=r'[0-9]+')
 def Check_num(message):
-    link = 'https://khayyam2601.herokuapp.com/api/number'
+    link = 'https://khayyam2601.herokuapp.com/api/number/'
     text = {"text":message.text}
     r = requests.post(link,data=json.dumps(text))
     data = json.loads(r.text)
