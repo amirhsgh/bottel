@@ -6,7 +6,7 @@ from telebot.types import ReplyKeyboardMarkup,KeyboardButton
 bot = telebot.TeleBot('1656459425:AAEymoNrG9_OP5yJh1vkXRJur4gkJoWh9-I')
 
 def Button(message):
-    r = requests.get('http://127.0.0.1:8000/api/button')
+    r = requests.get('https://khayyam2601.herokuapp.com/api/button')
     data = json.loads(r.text)
     key = ReplyKeyboardMarkup(True,False)
     text = "سلام {} شماره دانشجویی تو وارد کن :)".format(message.from_user.first_name)
@@ -18,7 +18,7 @@ def start(message):
 
 @bot.message_handler(regexp=r'[0-9]+')
 def Check_num(message):
-    link = 'http://127.0.0.1:8000/api/number'
+    link = 'https://khayyam2601.herokuapp.com/api/number'
     text = {"text":message.text}
     r = requests.post(link,data=json.dumps(text))
     data = json.loads(r.text)

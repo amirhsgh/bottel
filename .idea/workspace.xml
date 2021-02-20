@@ -4,6 +4,7 @@
     <list default="true" id="ad4319f1-0f76-49c2-9633-8cccf68c0062" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khayyam.py" beforeDir="false" afterPath="$PROJECT_DIR$/khayyam.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/khayyam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/khayyam/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613754819961</updated>
       <workItem from="1613754839720" duration="15442000" />
-      <workItem from="1613804070484" duration="7675000" />
+      <workItem from="1613804070484" duration="8351000" />
     </task>
     <servers />
   </component>
