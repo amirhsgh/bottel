@@ -6,7 +6,7 @@ import json
 import telebot
 import requests
 from telebot.types import ReplyKeyboardMarkup,KeyboardButton
-TOKEN = '1656459425:AAEymoNrG9_OP5yJh1vkXRJur4gkJoWh9-I'
+TOKEN = '1656459425:AAFxe6vhsG8TuRHIpw3-JVWOpFSc3yxdLX8'
 bot = telebot.TeleBot(TOKEN)
 
 class GetList(APIView):
